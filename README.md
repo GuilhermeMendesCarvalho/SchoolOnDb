@@ -1,2 +1,4 @@
 # SchoolOnDb
-Subi o banco no git para ficar mais fácil caso precise de qualquer atualização no banco.
+.O arquivo contém comando para gerar banco local
+.tem bloco de notas com senha
+.tem também o bloco de notas ensinando como subir imagens no Node.js e gravar na tabela de maneira leve.
