@@ -1,0 +1,25 @@
+Na sua Aplicação (Node.js):
+
+Upload: Você usará uma biblioteca como a multer para gerenciar o upload de arquivos.
+
+O fluxo será:
+a. O usuário envia a imagem através de um formulário.
+b. O multer no seu servidor recebe o arquivo.
+c. Sua aplicação salva o arquivo em uma pasta no seu servidor (ex: /public/uploads/posts/).
+d. Para evitar nomes duplicados, você gera um nome de arquivo único (ex: 1657234365-imagem-original.jpg).
+e. Você então salva apenas este nome de arquivo ('1657234365-imagem-original.jpg') na sua coluna imagem no banco de dados.
+
+Para Exibir a Imagem:
+
+Quando você busca os dados de um post no banco, você recebe o nome do arquivo da imagem (ex: post.imagem).
+
+No seu front-end (HTML/React/etc.), você simplesmente monta o caminho completo para a imagem:
+
+HTML
+
+<img src="https://seusite.com/uploads/posts/1657234365-imagem-original.jpg">
+Ou, de forma dinâmica:
+
+HTML
+
+<img src=`https://seusite.com/uploads/posts/${post.imagem}`>
